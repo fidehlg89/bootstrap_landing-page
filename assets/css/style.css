@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #242029;
+  background: #202827ed;
   overflow-y: auto;
 }
 
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 120px;
   height: 140px;
-  border: 8px solid #2c2f3f;
+  border: 3px solid #6e6e6e;
 }
 
 #header .profile h1 {
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background-color: var(--bs-primary);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -176,10 +176,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
   border: 0;
   background: none;
   font-size: 24px;
@@ -191,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: var(--bs-primary);
 }
 
 .mobile-nav-active {
@@ -203,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: var(--bs-primary);
 }
 
 /*--------------------------------------------------------------
