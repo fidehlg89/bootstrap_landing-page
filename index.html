@@ -33,15 +33,12 @@
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/style2.css" rel="stylesheet" />
 
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="./assets/js/vue.global.js"></script>
+
 </head>
 
 <body>
+   
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand d-lg-none" href="#about">About</a>
@@ -66,6 +63,7 @@
       </div>
     </div>
   </nav>
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
@@ -80,7 +78,6 @@
         </h4>
 
         <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/fidehlg89/" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="https://www.linkedin.com/in/ernesto-alonso-ochoa-831a56239/" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
         </div>
@@ -103,6 +100,7 @@
 
         </ul>
       </nav>
+
       <div class="text-light pt-lg-5">
         <h4 class="font-weight-bold">Contact:</h4>
         <p class="m-0">Email: fidehlg89@gmail.com</p>
@@ -129,12 +127,13 @@
   </section>
   <!-- End Hero -->
 
-  <main id="main">
+  <main id="main">   
+    
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
         <div class="section-title">
-          <h2>About</h2>
+          <h2>About me</h2>
           <!-- <p class="font-italic">
                 Informatics engineer graduated in the University of Holguín Cuba from June 2016, moved from Holguín to Habana city and living from October 2019. Software developer with 5 years of experience in web developer and CMS management. Good learning abilities in the area of information technologies and computer sciences, network administration and linux systems manipulation. I have basic knowledge of the English language graduated from language school.
             </p -->
@@ -155,7 +154,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-4">
                 <ul>
-                  <li>
+                  <li class="d-flex gap-1">
                     <i class="icofont-rounded-right"></i>
                     <strong>Birthday:</strong> 1 August 1989
                   </li>
@@ -164,7 +163,7 @@
                       <strong>Website:</strong>
                       <a href="https://fidehlg89.github.io/landing-page/">Click here</a>
                     </li> -->
-                  <li>
+                  <li class="d-flex gap-1">
                     <i class="icofont-rounded-right"></i>
                     <strong>Phone:</strong> +53 55998451
                   </li>
@@ -172,7 +171,7 @@
                     <i class="icofont-rounded-right"></i>
                     <strong>City:</strong> Havana, Cuba
                   </li>
-                  <li>
+                  <li class="d-flex gap-1">
                     <i class="icofont-rounded-right"></i>
                     <strong>Age:</strong> 32
                   </li>
@@ -180,16 +179,16 @@
               </div>
               <div class="col-lg-6 col-md-4">
                 <ul>
-                  <li>
+                  <li class="d-flex gap-1">
                     <i class="icofont-rounded-right"></i>
-                    <strong>Degree:</strong> Bachelor - Informatics Engineer
+                    <strong>Degree: </strong>Bachelor - Informatics Engineer
                   </li>
-                  <li>
+                  <li class="d-flex gap-1">
                     <i class="icofont-rounded-right"></i>
-                    <strong>Email:</strong>
+                    <strong>Email: </strong>
                     <a href="mailto:fidehlg89@gmail.com">fidehlg89@gmail.com</a>
                   </li>
-                  <li>
+                  <li class="d-flex gap-1">
                     <i class="icofont-rounded-right"></i>
                     <strong>Status:</strong> Freelancer
                   </li>
@@ -394,16 +393,16 @@
             </div>
             <div class="resume-item">
               <h4>Education</h4>
-                <div>
-                  <p>
-                    Informatics engineer graduated in the University of Holguín
-                    Cuba from July 2016.
-                  </p>
-                  <p>
-                    Basic knowledge of the English language graduated from
-                    language school.
-                  </p>
-                </div>
+              <div>
+                <p>
+                  Informatics engineer graduated in the University of Holguín
+                  Cuba from July 2016.
+                </p>
+                <p>
+                  Basic knowledge of the English language graduated from
+                  language school.
+                </p>
+              </div>
             </div>
             <div class="resume-item">
               <h4>Professional Experience</h3>
@@ -462,11 +461,180 @@
         <div class="section-title">
           <h2>Projects</h2>
           <p>
-            Personal projects and for companies in which I been worked -
+            Personal projects and for companies I been worked -
             Review for more personal projects
           </p>
           <a href="https://github.com/fidehlg89" target="_blank">GitHub projects</a>
         </div>
+
+        <div class="accordion" id="accordionExample">
+          <!-- Card Taxi en Cuba dev -->
+          <div class="card">
+            <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Taxi en Cuba - Yii2 lamp stack
+                </button>
+              </h2>
+              <span>status: <i class="text-danger">offline</i></span>
+            </div>
+            <!-- Collapse 1 Taxi en Cuba  -->
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="">
+                <div class="img-Card">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/taxi-cuba.png" class="img-fluid" alt="" />
+                      <div class="portfolio-links">
+                        <a href="https://www.taxiencuba.com/frontend/web/" target="_blank" title="Taxi en Cuba"><i
+                            class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  This project was developed with yii2 MVC framework <a
+                    href="https://www.taxiencuba.com/frontend/web/">Taxi en Cuba</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Front 10 dev -->
+          <div class="card">
+            <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Front 10 - Frontend developer
+                </button>
+              </h2>
+              <span>status: <i class="text-success">online</i></span>
+            </div>
+            <!-- Collapse 2 Front 10 #bte  -->
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <!-- https://catalog.f10.page/ -->
+              <div class="img-Card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/front10.svg" class="img-fluid" alt="" />
+                    <div class="portfolio-links">
+                      <a href="https://www.front10.com" target="_blank" title="Front10"><i
+                          class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="p-0">Front10 enterprise, with headquarter in Miami. Florida</p>
+                <p class="p-0">Implementation of catalog products with an experimental team of developers </p>
+                <a href="https://catalog.f10.page/">Front 10 Catalog</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Raptor Web wordpress dev -->
+          <div class="card">
+            <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Raptor Web - Wordpress developer and design
+                </button>
+              </h2>
+              <span>status: <i class="text-success">online</i></span>
+            </div>
+            <!-- Collapse 3 Raptor web  -->
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="img-Card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/raptor-web.png" class="img-fluid" alt="" />
+                    <div class="portfolio-links">
+                      <a href="https://www.raptor-web.com/" target="_blank" title="Raptor web"><i
+                          class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                Web developer and designer of sites in php frameworks at Raptor web
+                <a href="https://www.raptor-web.com/">Raptor web</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Genius Referrals symfony dev -->
+          <div class="card">
+            <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Genius Referrals - Symfony, Docker
+                </button>
+              </h2>
+              <span>status: <i class="text-success">online</i></span>
+            </div>
+            <!-- Collapse 2 Front 10 #bte  -->
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <!-- https://catalog.f10.page/ -->
+              <div class="img-Card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/H-Degradado.webp" class="img-fluid" alt="" />
+                    <div class="portfolio-links">
+                      <a href="https://geniusreferrals.com/" target="_blank" title="Genius Referrals"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="p-0">Genius Referrals developer team, with headquarter in Miami. Florida</p>
+                <p class="p-0">Web site developed in symfony</p>
+                <a href="https://geniusreferrals.com/">Genius Referrals</a>
+              </div>
+            </div>
+          </div>
+
+           <!-- Card QvaSell vue js --->
+           <div class="card">
+            <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  QvaSell - Vue js
+                </button>
+              </h2>
+              <span>status: <i class="text-danger">offline</i></span>
+            </div>
+            <!-- Collapse 2 Front 10 #bte  -->
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <!-- https://catalog.f10.page/ -->
+              <div class="img-Card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/qvasell.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-links">
+                      <a href="https://www.qvasell.com/" target="_blank" title="QvaSell"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="p-0">Qvasell is a project from Knales developer team, with headquarter in USA</p>
+                <p class="p-0">Web SPA developed with vue js</p>
+                <a href="https://www.qvasell.com/">QvaSell</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
@@ -479,28 +647,7 @@
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/taxi-cuba.png" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/taxi-cuba.png" data-gall="portfolioGallery" class="venobox"
-                  title="Taxi en Cuba"><i class="bx bx-plus"></i></a>
-                <a href="https://www.taxiencuba.com/frontend/web/" title="Taxi en Cuba"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-js">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/qvasell.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/qvasell.jpg" data-gall="portfolioGallery" class="venobox"
-                  title="Qvasell"><i class="bx bx-plus"></i></a>
-                <a href="https://recargacubana.com" title="Qvasell"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">          
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-blazor">
             <div class="portfolio-wrap">
@@ -508,7 +655,7 @@
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/blazor-dashboard.jpg" data-gall="portfolioGallery" class="venobox"
                   title="Qvasell"><i class="bx bx-plus"></i></a>
-                <a href="https://qvasell.com" title="Qvasell"><i class="bx bx-link"></i></a>
+                <a href="https://qvasell.com" title="Blazor dashboard"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -681,44 +828,36 @@
         </div>
 
         <div class="row" data-aos="fade-in">
-          <div class="col-lg-4 d-flex align-items-stretch mb-4">
+          <div class="d-flex align-items-stretch mb-4">
             <div class="info">
               <div class="address">
-                <i class="icofont-google-map"></i>
-                <h3>Address</h3>
-                <p>10 de octubre, La Habana, Cuba</p>
+                <div class="info-header">
+                  <i class="icofont-google-map"></i>
+                  <span>10 de octubre, La Habana, Cuba</span>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch mb-4">
-            <div class="info">
               <div class="email">
-                <i class="icofont-envelope"></i>
-                <h3>Email</h3>
-                <p>fidehlg89@gmail.com</p>
+                <div class="info-header">
+                  <i class="icofont-envelope"></i>
+                  <span>fidehlg89@gmail.com</span>
+                </div>               
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch mb-4">
-            <div class="info">
               <div class="phone">
-                <i class="icofont-phone"></i>
-                <h3>Phone</h3>
-                <p>+53 55998451</p>
+                <div class="info-header">
+                  <i class="icofont-phone"></i>
+                  <span>+53 55998451</span>
+                </div>                
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="info">
               <div class="phone">
-                <i class="icofont-telegram"></i>
-                <h3>Telegram</h3>
-                <p>ernestoha89</p>
-              </div>
-            </div>
+                <div class="info-header">
+                  <i class="icofont-telegram"></i>
+                  <span>ernestoha89</span>
+                </div>
+              </div>              
+            </div>            
           </div>
         </div>
       </div>
@@ -731,7 +870,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Updated <strong><span>2022</span></strong>
+        &copy; Updated <strong><span>September 2022</span></strong>
       </div>
       <div class="credits">
         Designed with:
@@ -759,9 +898,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/scripts.js"></script>
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="./assets/js/react_app.js"></script>
+
 </body>
 
 </html>
