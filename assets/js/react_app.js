@@ -1,17 +1,35 @@
-import React, { useState } from 'react';
+var e = React.createElement;
 
-function Example() {
-    const [count, setCount] = useState(0);
+const items = [
+  { id: 1, name: "Fidel Ernesto" },
+  { id: 2, name: "New Preson" },
+];
 
-    return (
-        <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click Me
-            </button>
-        </div>
-    );
+function Navbar() {
+  return e("ul", { key: "todos" }, items.map((element)=>{
+    e(e("li", null, element.name), { key: "item1" })
+  }));
 }
-// Find all DOM containers, and render Like buttons into them.
-const rootElement = document.getElementById("app");
-ReactDOM.render(<Example />, rootElement);
+
+function TodoItem() {
+    return e("li", null, "Todo Item");
+  }
+  
+  function TodoApp() {
+    return e("div", null, [
+        e("h1", { key: "title" }, "To Do List"), 
+        e(
+          "ul",
+          { key: "todos" },
+          items.map(item =>
+            e(TodoItem, { key: item.id, text: item.text })
+          )
+        )
+      ]);
+  }
+
+const App = () => {
+  return e(TodoApp);
+};
+
+ReactDOM.render(e(App), document.getElementById("app"));
