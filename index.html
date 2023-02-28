@@ -40,6 +40,16 @@
 
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+  <script>
+    function getLongDate() {
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var today = new Date();
+      var monthName = months[today.getMonth()];
+      var year = today.getFullYear();
+      return monthName + " " + year;
+    }
+  </script>
+
 </head>
 
 <body>
@@ -739,7 +749,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Last Update <strong><span>Ferbuary 2023</span></strong>
+        &copy; Last Update <strong><span id="page-update-date"></span></strong>
       </div>
       <div class="credits">
         Designed with:
@@ -768,10 +778,17 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/scripts.js"></script>
 
-
-
   <!-- My Scripts -->
   <script src="assets/js/react/skills-dist.js"></script>
+
+  <script>
+		// Obtener el elemento span donde se mostrará la fecha larga
+		var longDateSpan = document.getElementById("page-update-date");
+
+		// Obtener la fecha larga y establecerla en el elemento span
+		var longDate = getLongDate();
+		longDateSpan.innerHTML = longDate;
+	</script>
 
 </body>
 
