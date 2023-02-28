@@ -1,32 +1,27 @@
-$primary-color: #37b3ed;
-$sans-fs: "Open Sans", sans-serif;
+$primary-color: #37b3ed
+$sans-fs: "Open Sans", sans-serif
 
 // _base.sass
-body 
+body
     font-family: $sans-fs
     color: #272829
 
-
-a 
+a
     color: $primary-color
 
-    :hover 
+    :hover
         color: $primary-color
         text-decoration: none
-    
-
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 
+h6
     font-family: "Raleway", sans-serif
 
-
-
-.back-to-top 
+.back-to-top
     position: fixed
     display: none
     width: 40px
@@ -39,23 +34,19 @@ h6
     transition: display 0.5s ease-in-out
     z-index: 99999
 
-    i 
+    i
         font-size: 24px
         position: absolute
         top: 7px
         left: 8px
-    
 
-    :hover 
+    :hover
         color: #fff
         background: #2eafec
         -webkit-transition: background 0.2s ease-in-out
         transition: background 0.2s ease-in-out
-    
 
-
-
-#header 
+#header
     position: fixed
     top: 0
     left: 0
@@ -68,16 +59,23 @@ h6
     background: #202827ed
     overflow-y: auto
 
-    .profile 
-        img 
+    @media screen and (max-width: 1200px)
+        display: none
+        // position: absolute
+        // top: 80px
+        // height: max-content
+        // padding: 20px 15px
+        // transition: none
+
+    .profile
+        img
             margin: 15px auto
             display: block
             width: 120px
             height: 140px
             border: 3px solid #6e6e6e
-        
 
-        h1 
+        h1
             font-size: 24px
             margin: 0
             padding: 0
@@ -86,18 +84,15 @@ h6
             text-align-last: center
             font-family: "Poppins", sans-serif
 
-            a 
+            a
                 color: #fff
                 text-decoration: none
-                :hover 
+                :hover
                     color: #fff
                     text-decoration: none
-                
-            
-        
 
-        .social-links 
-            a 
+        .social-links
+            a
                 font-size: 18px
                 display: inline-block
                 background-color: $primary-color
@@ -111,22 +106,17 @@ h6
                 height: 36px
                 transition: 0.3s
 
-                :hover 
+                :hover
                     background: $primary-color
                     color: #fff
-                    text-decoration: none   
+                    text-decoration: none
 
-
-#main 
+#main
     margin-left: 300px
-  
-  
-    @media (max-width: 1199px) 
-        #header 
-        left: -300px
-    
-  
-        #main 
-        margin-left: 0
-    
-  
+
+    @media (max-width: 1199px)
+        #header
+            left: -300px
+
+        #main
+            margin-left: 0
