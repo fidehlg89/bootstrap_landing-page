@@ -138,6 +138,12 @@
   }
 }
 
+@media (min-width: 575px) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
