@@ -983,8 +983,9 @@ section {
 
 @media (max-width: 1199px) {
   #footer {
-    position: static;
-    width: auto;
+    position: sticky;
+    width: 100%;
     padding-right: 20px 15px;
+    padding-bottom: 0;
   }
 }
