@@ -138,7 +138,7 @@
   }
 }
 
-@media (min-width: 575px) {
+@media (min-width: 768px) {
   .mobile-nav-toggle {
     display: none;
   }
