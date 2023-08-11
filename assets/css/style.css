@@ -10,6 +10,8 @@
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
+  display: flex;
+  justify-content: center;
   padding-top: 30px;
 }
 
