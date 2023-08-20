@@ -112,7 +112,7 @@
         </ul>
       </nav>
 
-      <div class="text-light pt-lg-5">
+      <div class="text-light text-center pt-lg-5">
         <h4 class="font-weight-bold">Contact:</h4>
         <p class="m-0">Email: fidehlg89@gmail.com</p>
         <p class="m-0">Phone: +53 55998451</p>
@@ -142,7 +142,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container">
+      <article class="container">
         <div class="section-title">
           <h2>About me</h2>
           <!-- <p class="font-italic">
@@ -204,7 +204,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
     <!-- End About Section -->
 
@@ -336,20 +336,21 @@
           <a href="https://github.com/fidehlg89" target="_blank">GitHub repositories</a>
         </div>
 
-        <div class="accordion" id="accordionExample">
-          <!-- Card Taxi en Cuba dev -->
+        <!-- TODO - make this acordion with react por vue js -->
+        <div class="accordion" id="accordionTaxiOnCuba">
+          <!-- Card Taxi en Cuba -->
           <div class="card">
             <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingOne">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Taxi en Cuba - Yii2 lamp stack
+                  data-target="#collapseTaxiOnCuba" aria-expanded="true" aria-controls="collapseTaxiOnCuba">
+                  Taxi en Cuba - Yii2 - Lamp stack
                 </button>
               </h2>
               <span>status: <i class="text-danger">offline</i></span>
             </div>
-            <!-- Collapse 1 Taxi en Cuba  -->
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <!-- Collapse - Taxi en Cuba  -->
+            <div id="collapseTaxiOnCuba" class="collapse show" aria-labelledby="headingTaxiOnCuba" data-parent="#accordionTaxiOnCuba">
               <div class="">
                 <div class="img-Card">
                   <div class="col-lg-4 col-md-6 portfolio-item filter-php">
@@ -365,7 +366,7 @@
 
                 <div class="card-body">
                   This project was developed with yii2 MVC framework <a
-                    href="https://www.taxiencuba.com/frontend/web/">Taxi en Cuba</a>
+                    href="https://www.taxiencuba.com/frontend/web/" target="_blank">Taxi en Cuba</a>
                 </div>
 
               </div>
@@ -399,7 +400,7 @@
               <div class="card-body">
                 <p class="p-0">Front10 enterprise, with headquarter in Miami. Florida</p>
                 <p class="p-0">Implementation of catalog products with an experimental team of developers </p>
-                <a href="https://catalog.f10.page/">Front 10 Catalog</a>
+                <a href="https://catalog.f10.page/" target="_blank">Front 10 Catalog</a>
               </div>
             </div>
           </div>
@@ -430,7 +431,38 @@
               </div>
               <div class="card-body">
                 Web developer and designer of sites in php frameworks at Raptor web
-                <a href="https://www.raptor-web.com/">Raptor web</a>
+                <a href="https://www.raptor-web.com/" target="_blank">Raptor web</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Raptor Web wordpress dev -->
+          <div class="card">
+            <div class="card-header mb-1 d-flex align-items-center justify-content-between" id="headingShipments">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseShipments" aria-expanded="false" aria-controls="collapseShipments">
+                  Registro de Envíos - Laravel - Lamp stack
+                </button>
+              </h2>
+              <span>status: <i class="text-success">online</i></span>
+            </div>
+            <!-- Shioments - Raptor Web App  -->
+            <div id="collapseShipments" class="collapse" aria-labelledby="headingShipments" data-parent="#accordionExample">
+              <div class="img-Card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/php-shipments.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-links">
+                      <a href="https://sistema.martelexpresssa.com/" target="_blank" title="Registro de envíos"><i
+                          class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                LAMP Stack developer and designer at Raptor web with Laravel and MySQL
+                <a href="https://sistema.martelexpresssa.com/" target="_blank">Registro de envíos</a>
               </div>
             </div>
           </div>
@@ -463,7 +495,7 @@
               <div class="card-body">
                 <p class="p-0">Genius Referrals developer team, with headquarter in Miami. Florida</p>
                 <p class="p-0">Web site developed in symfony</p>
-                <a href="https://geniusreferrals.com/">Genius Referrals</a>
+                <a href="https://geniusreferrals.com/" target="_blank">Genius Referrals</a>
               </div>
             </div>
           </div>
@@ -495,7 +527,7 @@
               <div class="card-body">
                 <p class="p-0">Qvasell is a project from Knales developer team, with headquarter in USA</p>
                 <p class="p-0">Web SPA developed with vue js</p>
-                <a href="https://www.qvasell.com/">QvaSell</a>
+                <a href="https://www.qvasell.com/" target="_blank">QvaSell</a>
               </div>
             </div>
           </div>
@@ -556,6 +588,31 @@
                   <li>Sort by clicking on the column header</li>
                 </ul>
               </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-js">
+            <article class="card">
+              <sercion class="portfolio-wrap ">
+                <img src="assets/img/portfolio/react-search-products.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/react-search-products.jpg" data-gall="portfolioGallery" class="venobox"
+                    title="Search Items"><i class="bx bx-plus"></i></a>
+                  <a href="https://fe-react-search-items.netlify.app/" title="Search Items"><i class="bx bx-link"></i></a>
+                </div>
+              </sercion>
+              <section class="card-body">
+                <label>Search Items</label>
+                <ul>
+                  <li>Fetch product items from json-server with axios</li>
+                  <li>Display the data in list of cards</li>
+                  <li>Notification with react-toastify</li>
+                  <li>Style with tailwind</li>
+                </ul>
+              </section>
+              <section class="card-footer text-center">
+                <a class="btn btn-primary" href="https://github.com/fidehlg89/react_search-items" target="_blank">Go to Github Proyect</a>
+              </section>
             </article>
           </div>
 
