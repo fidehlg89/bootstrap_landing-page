@@ -2,7 +2,7 @@
 ## Personal page
 
 ### URL
-**https://fidehlg89.github.io/fidehlg89/**
+**https://fidehlg89.github.io/landing-page/**
 
 ### Development tools
 **HTML, CSS, Javascript, JQuery, Bootstrap, Sass, React js**
