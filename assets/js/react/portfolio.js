@@ -49,15 +49,6 @@ const portfolioAccordionItems = [
     url: "https://recargacubana.com/",
     image: "assets/img/portfolio/qvasell.jpg",
     status: "online"
-  },
-  {
-    id: "taxioncuba",
-    title: "Taxi en Cuba",
-    description: "Este proyecto fue desarrollado con el framework yii2 MVC",
-    headerTitle: "Taxi en Cuba - Yii2 - Lamp stack",
-    url: "https://www.taxiencuba.com/frontend/web/",
-    image: "assets/img/portfolio/taxi-cuba.png",
-    status: "offline"
   }
 ];
 
