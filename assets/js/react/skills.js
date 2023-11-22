@@ -8,6 +8,7 @@ const Skill = ({ name, level }) => {
         <div
           className="progress-bar"
           role="progressbar"
+          aria-label={`${name}-${level}%`}
           aria-valuenow={level}
           aria-valuemin="0"
           aria-valuemax="100"
