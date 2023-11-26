@@ -8,7 +8,7 @@ const portfolioAccordionItems = [
     headerTitle: "Front 10 - Programador web frontend",
     url: "https://www.front10.com",
     image: "assets/img/portfolio/front10.svg",
-    status: "online"
+    status: "online",
   },
   {
     id: "raptor-web",
@@ -18,7 +18,7 @@ const portfolioAccordionItems = [
     headerTitle: "Raptor Web - Desarrollador y diseño de Wordpress, Laravel",
     url: "https://www.raptor-web.com/",
     image: "assets/img/portfolio/raptor-web.png",
-    status: "online"
+    status: "online",
   },
   {
     id: "laravel-shipments",
@@ -28,7 +28,7 @@ const portfolioAccordionItems = [
     headerTitle: "Registro de Envíos - Laravel - Lamp stack",
     url: "https://sistema.martelexpresssa.com/",
     image: "assets/img/portfolio/php-shipments.jpg",
-    status: "online"
+    status: "online",
   },
   {
     id: "genius-referrals",
@@ -38,7 +38,7 @@ const portfolioAccordionItems = [
     headerTitle: "Genius Referrals - Symfony, Docker",
     url: "https://geniusreferrals.com/",
     image: "assets/img/portfolio/H-Degradado.webp",
-    status: "online"
+    status: "online",
   },
   {
     id: "vue-qvasell",
@@ -48,8 +48,8 @@ const portfolioAccordionItems = [
     headerTitle: "QvaSell - Vue js",
     url: "https://recargacubana.com/",
     image: "assets/img/portfolio/qvasell.jpg",
-    status: "online"
-  }
+    status: "online",
+  },
 ];
 
 const Portfolio = () => {
@@ -62,7 +62,7 @@ const Portfolio = () => {
           {`Empresas y proyectos personales en los que he trabajado - Más en: `}
         </p>
         <a href="https://github.com/fidehlg89" target="_blank">
-          GitHub repositories
+          REpositorios github
         </a>
       </div>
 
@@ -88,7 +88,7 @@ const Portfolio = () => {
                       </button>
                     </h2>
                     <span>
-                      status:{" "}
+                      status:
                       <i
                         className={`text-${
                           item.status === "online" ? "success" : "danger"
@@ -110,9 +110,9 @@ const Portfolio = () => {
                           <img src={item.image} className="img-fluid" alt="" />
                           <div className="portfolio-links">
                             <a
-                              href="https://www.taxiencuba.com/frontend/web/"
+                              href={`${item.url}`}
                               target="_blank"
-                              title="Taxi en Cuba"
+                              title={`${item.title}`}
                             >
                               <i className="bx bx-link"></i>
                             </a>
