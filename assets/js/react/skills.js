@@ -25,7 +25,7 @@ const Skillslist = () => {
     { name: "JS", level: 70 },
     { name: "JQuery", level: 45 },
     { name: "Vue js", level: 60 },
-    { name: "React js", level: 60 },
+    { name: "React js", level: 75 },
     { name: "TS", level: 60 },
     { name: "PHP", level: 70 },
     { name: "Yii2", level: 40 },
