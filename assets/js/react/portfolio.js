@@ -5,7 +5,7 @@ const portfolioAccordionItems = [
     title: "Front10",
     description:
       "Empresa Front 10, con sede MIAMI, Florida. USA. Implementación de productos de catálogo con un equipo experimental de desarrolladores.",
-    headerTitle: "Front 10 - Programador web frontend",
+    headerTitle: "Front 10 - Desarrollador web frontend",
     url: "https://www.front10.com",
     image: "assets/img/portfolio/front10.svg",
     status: "online",
