@@ -62,7 +62,7 @@ const Portfolio = () => {
           {`Empresas y proyectos personales en los que he trabajado - Más en: `}
         </p>
         <a href="https://github.com/fidehlg89" target="_blank">
-          REpositorios github
+          Repositorios github
         </a>
       </div>
 
