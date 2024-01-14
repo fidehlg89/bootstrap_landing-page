@@ -14,7 +14,7 @@ const portfolioAccordionItems = [
     id: "raptor-web",
     title: "Raptor web",
     description:
-      "Diseñador y programador de sitios Wordpress y Desarrollador web con Laravel en Raptor web",
+      "Diseñador y programador de sitios Wordpress y Desarrollador web con Laravel + Livewire + Tailwind en Raptor web",
     headerTitle: "Raptor Web - Desarrollador y diseño de Wordpress, Laravel",
     url: "https://www.raptor-web.com/",
     image: "assets/img/portfolio/raptor-web.png",
