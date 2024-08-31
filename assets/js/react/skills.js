@@ -66,6 +66,6 @@ const Skillslist = () => {
   );
 };
 
-const container = document.getElementById("app-skills");
+const container = document.getElementById("app-skills-old");
 const root = ReactDOM.createRoot(container);
 root.render(<Skillslist />);
